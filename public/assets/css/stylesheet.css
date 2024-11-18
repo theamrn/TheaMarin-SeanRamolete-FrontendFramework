@@ -1,0 +1,428 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+#page-content-wrapper {
+  margin-left: 240px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #363740;
+  color: #ffffff;
+  padding: 0;
+}
+
+.sidebar-heading {
+  font-size: 20px;
+  color: #dfe0eb;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.list-group {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #dfe0eb;
+  font-size: 16px;
+  transition: background 0.2s ease-in-out;
+}
+
+.list-item:hover,
+.list-item.active {
+  background-color: #9fa2b4;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.grey {
+  color: #c5c7cd;
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+/* Main Content */
+.dashboard-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.user-profile {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.profile-name {
+  margin-right: 8px;
+}
+
+.profile-img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+
+/* Dashboard */
+.overview-top {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-tiles {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  flex: 1 1 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Hover effect for top tiles */
+.tile-hover:hover {
+  border: 2px solid blue;
+  box-shadow: 0px 4px 8px rgba(0, 0, 255, 0.2);
+}
+
+.tile-title {
+  font-size: 14px;
+  color: #9fa2b4;
+  margin-bottom: 4px;
+}
+
+.tile-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #252733;
+}
+
+.highlighted {
+  border-color: #f12b2c;
+}
+
+.middle-tile {
+  background-color: #ffffff;
+  border: 1px solid #dfe0eb;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 20px;
+}
+
+.chart {
+  text-align: center;
+}
+
+.info .stats-group {
+  text-align: center;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #dfe0eb;
+}
+
+.info .border-none {
+  border-bottom: none;
+}
+
+.info .stats-group h6 {
+  color:  #9FA2B4;
+  font-size: 14px;
+  display: inline-block; 
+  padding: 4px 8px; 
+  border-radius: 4px; 
+  margin-bottom: 4px;
+}
+
+.info .stats-group h4 {
+  font-size: 20px;
+  font-weight: bold; 
+}
+
+/* Bottom Tiles */
+.bottom-tile {
+  background-color: #ffffff;
+  border: 1px solid #dfe0eb;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 20px;
+}
+
+.unresolved-tickets-group {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dfe0eb;
+  padding: 12px 0;
+}
+
+.unresolved-numbers {
+  color: #9FA2B4;
+}
+
+/* Flex layout for the .overview-bottom */
+.overview-bottom {
+  display: flex;
+  gap: 15px; /* Space between the two tiles */
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+}
+
+/* Styling for each .bottom-tile */
+.bottom-tile {
+  background-color: #ffffff;
+  border: 1px solid #dfe0eb;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex: 1 1 calc(50% - 15px); /* Takes up 50% of space with gap */
+}
+
+
+/* Task List */
+.add-task-btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  background-color: #F0F1F7;
+  color: #a4a4a4;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 350px;
+  
+}
+
+.add-task-btn:hover {
+  background-color: #1d9a73; /* Darker green on hover */
+}
+
+.right .card-header {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.right .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 16px;
+  margin-bottom: 12px;  
+}
+
+.right .badge {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.badge.bg-warning {
+  background-color: #f12b2c;
+  color: #ffffff;
+}
+
+.badge.bg-success {
+  background-color: #29cc97;
+  color: #ffffff;
+}
+
+.badge.bg-secondary {
+  background-color: #9fa2b4;
+  color: #ffffff;
+}
+
+.btn-outline-secondary {
+  border: none;
+  box-shadow: none;  
+  color: #3751FF;
+}
+
+.today-text {
+  color: #9FA2B4;
+}
+
+.d-flex.justify-content-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-flex .badge {
+  margin-left: 300px;
+}
+
+/* Custom checkbox */
+.custom-checkbox {
+  -webkit-appearance: none;  
+  -moz-appearance: none;     
+  appearance: none;          
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;        
+  border: 2px solid #9fa2b4; 
+  background-color: #fff;    
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  margin: 0;                 
+  display: inline-block;     
+  vertical-align: middle;    
+}
+
+/* When checkbox is checked */
+.custom-checkbox:checked {
+  background-color: #29cc97; 
+  border-color: #29cc97;     
+}
+
+/* Add the checkmark */
+.custom-checkbox:checked::before {
+  content: '\2713';  /* Unicode for checkmark */
+  font-size: 12px;
+  color: white;
+  position: absolute;
+  top: 1px;
+  left: 3px;
+}
+
+/* Hover effect */
+.custom-checkbox:hover {
+  border-color: #1d9a73;  /* Darker border color on hover */
+}
+
+/* Flex container for checkbox and label */
+.d-flex.align-items-center {
+  display: flex;
+  align-items: center;  /* Ensures vertical alignment */
+  gap: 8px;  /* Adds some space between the checkbox and the label */
+}
+
+/* Custom checkbox styling */
+.custom-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #9fa2b4;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  margin: 0;
+  vertical-align: middle;
+}
+
+/* When checkbox is checked */
+.custom-checkbox:checked {
+  background-color: #29cc97;
+  border-color: #29cc97;
+}
+
+/* Add the checkmark */
+.custom-checkbox:checked::before {
+  content: '\2713';  /* Unicode for checkmark */
+  font-size: 12px;
+  color: white;
+  position: absolute;
+  top: 1px;
+  left: 3px;
+}
+
+/* Label alignment */
+.d-flex .ms-2 {
+  margin-left: 3px;  /* Ensures space between the checkbox and label */
+  white-space: nowrap;  /* Prevents text wrapping */
+}
+
+/* Ensure the checkbox doesn't push the label down */
+.right .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;  /* Adjust padding to ensure alignment */
+}
+
+/* Graph Image */
+.line-graph-img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .line-graph-img {
+    width: 100%;
+  }
+}
+
+/* Overdue Tile Hover Effect */
+.overdue-tile:hover {
+  border: 2px solid blue; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 255, 0.2);
+}
+
+/* Layout fixes for small screens */
+@media (max-width: 768px) {
+  #wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  #page-content-wrapper {
+    margin-left: 0;
+  }
+
+  .overview-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-tiles {
+    margin-bottom: 20px;
+    flex: 1 1 100%;
+  }
+
+  .bottom-tile {
+    flex: 1 1 100%;
+  }
+
+  .right .list-group-item {
+    padding: 12px 8px;
+    font-size: 14px;
+  }
+}

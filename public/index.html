@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Framework</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/assets/css/stylesheet.css"/>
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar Start -->
+        <nav class="sidebar">
+            <h5 class="sidebar-heading text-center py-4">Dashboard Kit</h5>
+            <ul class="list-group my-3">
+                <li>
+                    <a href="#" class="list-item active">
+                        <i class="grey bi bi-pie-chart-fill"></i> Overview
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-item">
+                        <i class="grey bi bi-credit-card-2-front-fill"></i> Tickets
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-item">
+                        <i class="grey bi bi-lightbulb-fill"></i> Ideas
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-item">
+                        <i class="grey bi bi-people-fill"></i> Contacts
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-item">
+                        <i class="grey bi bi-person-badge-fill"></i> Agents
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-item">
+                        <i class="grey bi bi-bookmark-fill"></i> Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-item">
+                        <i class="grey bi bi-gear-fill"></i> Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-item">
+                        <i class="grey bi bi-award-fill"></i> Subscription
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Sidebar End -->
+
+        <!-- Main Content -->
+        <div id="page-content-wrapper" class="container-fluid">
+
+            <div class="py-4 px-4">
+                <div class="overview-dashboard d-flex justify-content-between align-items-center">
+                    <h3 class="dashboard-title">Overview</h3>
+                    <div class="user-profile d-flex align-items-center">
+                        <span class="profile-name">Jones Ferdinand</span>
+                        <img class="profile-img rounded-circle ms-2" src="/assets/images/profile.jpg" alt="Profile">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid px-4">
+
+                <!-- Top Tiles -->
+                <div class="overview-top row text-center">
+                    <div class="top-tiles unresolved-tile tile-hover col-sm-3">
+                        <h5 class="tile-title">Unresolved</h5>
+                        <h2 class="tile-value">60</h2>
+                    </div>
+                    <div class="top-tiles overdue-tile tile-hover col-sm-3">
+                        <h5 class="tile-title">Overdue</h5>
+                        <h2 class="tile-value">16</h2>
+                    </div>
+                    <div class="top-tiles open-tile tile-hover col-sm-3">
+                        <h5 class="tile-title">Open</h5>
+                        <h2 class="tile-value">43</h2>
+                    </div>
+                    <div class="top-tiles on-hold-tile tile-hover col-sm-3">
+                        <h5 class="tile-title">On hold</h5>
+                        <h2 class="tile-value">64</h2>
+                    </div>
+                </div>
+
+                <!-- Middle Tile -->
+                <div class="overview-middle row">
+    <!-- Make this tile take up more space in the grid -->
+    <div class="middle-tile chart col-sm-8">
+        <h5>Today's trends</h5>
+        <h6>as of 25 May 2019, 09:41 PM</h6>
+        <img class="line-graph-img" src="/assets/images/Line-Chart.png" alt="line graph of today's trends">
+    </div>
+    <div class="middle-tile info col-sm-4 text-center">
+        <div class="stats-group my-2">
+            <h6>Resolved</h6>
+            <h4>449</h4>
+        </div>
+        <div class="stats-group my-2">
+            <h6>Received</h6>
+            <h4>426</h4>
+        </div>
+        <div class="stats-group my-2">
+            <h6>Average first response time</h6>
+            <h4>33m</h4>
+        </div>
+        <div class="stats-group my-2">
+            <h6>Average response time</h6>
+            <h4>3h 8m</h4>
+        </div>
+        <div class="stats-group border-none my-2">
+            <h6>Resolution within SLA</h6>
+            <h4>94%</h4>
+        </div>
+    </div>
+</div>
+
+                <!-- Bottom Tiles -->
+                <div class="overview-bottom row">
+                    <div class="bottom-tile col-sm-6">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h5>Unresolved tickets</h5>
+                            <!-- View Details Button -->
+                            <a href="#" class="btn btn-outline-secondary btn-sm">View Details</a>
+                        </div>
+                        <h6>Group: Support</h6>
+                        <br>
+                        <div class="stats-group unresolved-tickets-group my-2">
+                            <h6>Waiting on Feature Request</h6>
+                            <h6 class="unresolved-numbers">4238</h6>
+                        </div>
+                        <div class="stats-group unresolved-tickets-group my-2">
+                            <h6>Awaiting Customer Response</h6>
+                            <h6 class="unresolved-numbers">1005</h6>
+                        </div>
+                        <div class="stats-group unresolved-tickets-group my-2">
+                            <h6>Awaiting Developer Fix</h6>
+                            <h6 class="unresolved-numbers">914</h6>
+                        </div>
+                        <div class="stats-group unresolved-tickets-group border-none my-2">
+                            <h6>Pending</h6>
+                            <h6 class="unresolved-numbers">281</h6>
+                        </div>
+                    </div>
+
+                    <div class="bottom-tile right col-sm-6">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5>Tasks</h5>
+                                <h6 class="today-text">Today</h6>
+                            </div>
+                            <!-- View all Button -->
+                            <a href="#" class="btn btn-outline-secondary btn-sm">View all</a>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <label for="task-1">Create New Task</label>
+                                    </div>
+                                    <button class="add-task-btn">+</button>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <input type="checkbox" id="task-1" class="custom-checkbox">
+                                        <label for="task-1" class="ms-2">Finish ticket update</label>
+                                    </div>
+                                    <span class="badge bg-warning">URGENT</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" class="custom-checkbox">
+                                        <label for="new-task" class="ms-2">Create new task example</label>
+                                      </div>
+                                    <span class="badge bg-success">NEW</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <input type="checkbox" id="task-3" class="custom-checkbox">
+                                        <label for="task-3" class="ms-2">Update ticket report</label>
+                                    </div>
+                                    <span class="badge bg-secondary">DEFAULT</span>
+                                </div>
+                            </li>     
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Main Content End -->
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGFvqpbVogEpzo9npw+FQXecTk6bMwD0H6pWEKm3" crossorigin="anonymous"></script>
+</body>
+</html>

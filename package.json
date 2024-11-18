@@ -1,0 +1,22 @@
+{
+  "name": "theamarin_seanramolete_inm320sbb_frontendframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server --baseDir=\"public\"",
+    "start": "concurrently \"npm run dev\" \"npm run go\"",
+    "go": "sass --watch src/scss:public/assets/css",
+    "build": "sass src/scss:public/assets/css"
+  },
+  "keywords": [],
+  "author": "Thea Marin & Sean Ramolete",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "lite-server": "^2.6.1",
+    "sass": "^1.81.0"
+  }
+}
+
