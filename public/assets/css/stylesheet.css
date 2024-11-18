@@ -187,8 +187,8 @@ body {
 /* Flex layout for the .overview-bottom */
 .overview-bottom {
   display: flex;
-  gap: 15px; /* Space between the two tiles */
-  flex-wrap: wrap; /* Allows wrapping on small screens */
+  gap: 15px; 
+  flex-wrap: wrap; 
 }
 
 /* Styling for each .bottom-tile */
@@ -199,7 +199,7 @@ body {
   padding: 16px;
   margin-top: 20px;
   margin-bottom: 20px;
-  flex: 1 1 calc(50% - 15px); /* Takes up 50% of space with gap */
+  flex: 1 1 calc(50% - 15px);
 }
 
 
@@ -223,7 +223,7 @@ body {
 }
 
 .add-task-btn:hover {
-  background-color: #1d9a73; /* Darker green on hover */
+  background-color: #1d9a73; 
 }
 
 .right .card-header {
@@ -305,7 +305,7 @@ body {
 
 /* Add the checkmark */
 .custom-checkbox:checked::before {
-  content: '\2713';  /* Unicode for checkmark */
+  content: '\2713';  
   font-size: 12px;
   color: white;
   position: absolute;
@@ -315,14 +315,14 @@ body {
 
 /* Hover effect */
 .custom-checkbox:hover {
-  border-color: #1d9a73;  /* Darker border color on hover */
+  border-color: #1d9a73; 
 }
 
 /* Flex container for checkbox and label */
 .d-flex.align-items-center {
   display: flex;
-  align-items: center;  /* Ensures vertical alignment */
-  gap: 8px;  /* Adds some space between the checkbox and the label */
+  align-items: center; 
+  gap: 8px; 
 }
 
 /* Custom checkbox styling */
@@ -350,7 +350,7 @@ body {
 
 /* Add the checkmark */
 .custom-checkbox:checked::before {
-  content: '\2713';  /* Unicode for checkmark */
+  content: '\2713'; 
   font-size: 12px;
   color: white;
   position: absolute;
@@ -360,8 +360,8 @@ body {
 
 /* Label alignment */
 .d-flex .ms-2 {
-  margin-left: 3px;  /* Ensures space between the checkbox and label */
-  white-space: nowrap;  /* Prevents text wrapping */
+  margin-left: 3px; 
+  white-space: nowrap;  
 }
 
 /* Ensure the checkbox doesn't push the label down */
@@ -369,7 +369,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 15px;  /* Adjust padding to ensure alignment */
+  padding: 15px 15px; 
 }
 
 /* Graph Image */
